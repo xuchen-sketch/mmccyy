@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>趣味人格测试</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 测试页 -->
+        <div id="testPage" class="page active">
+            <h1>趣味人格测试</h1>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div class="question-card">
+                <h2 id="questionText"></h2>
+                <div id="optionsBox" class="options-box"></div>
+            </div>
+        </div>
+
+        <!-- 结果页 -->
+        <div id="resultPage" class="page">
+            <h1>你的人格类型是：</h1>
+            <div class="result-card">
+                <h2 id="resultTitle"></h2>
+                <p id="resultEnglish" class="english"></p >
+                <img id="resultImg" src="" alt="人格形象">
+                <p id="resultDesc" class="desc"></p >
+            </div>
+            <div class="btn-group">
+                <button onclick="restartTest()">重新测试</button>
+                <button onclick="shareResult()">分享结果</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
